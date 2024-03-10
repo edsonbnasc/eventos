@@ -30,6 +30,7 @@ class _TelaInicialState extends State<TelaInicial> {
           //menu lateral com botões de navegação
             ListTileTheme(child: const ThemeButton()),
             ListTile(leading: const Icon(Icons.home), title: const Text('Home'), onTap: ()=>Navigator.of(context).push(MaterialPageRoute(builder:(_)=> const TelaInicial()))),
+            ListTile(leading: const Icon(Icons.settings), title: const Text('Cadastre-se') ,onTap: ()=>Navigator.of(context).push(MaterialPageRoute(builder:(_)=> const TelaLogin()))),
             ListTile(leading: const Icon(Icons.settings), title: const Text('Eventos') ,onTap: ()=>Navigator.of(context).push(MaterialPageRoute(builder:(_)=> const Eventos()))),
             ListTile(leading: const Icon(Icons.search),title: const Text("Buscar"),onTap: () => {},),         
             ListTile(leading:const Icon(Icons.settings),title:const Text('Configurações') ,onTap:(){})],
@@ -50,23 +51,23 @@ class _TelaInicialState extends State<TelaInicial> {
          Container(height: 60),
          Row(mainAxisAlignment: MainAxisAlignment.end,mainAxisSize: MainAxisSize.min ,
          children: [
-          ElevatedButton(onPressed: ()=>Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const TelaLogin())), child: const Text("Cadastre-se")),
+          // ElevatedButton(onPressed: ()=>Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const TelaLogin())), child: const Text("Cadastre-se")),
           ElevatedButton(onPressed: ()=>Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const Eventos())),child: const Text("Eventos"))
           ]),
           Container(
             margin: EdgeInsets.all(16),
             child: Column(children: [Image.asset('../assets/cantor.png'),
-            Text('Show ao VIVO',style: GoogleFonts.indieFlower(fontSize:24),)],),
+            Text('Show ao VIVO',style: GoogleFonts.indieFlower(fontSize:20),)],),
           ), 
           Container(
             margin: EdgeInsets.all(16),
             child: Column(children: [Image.asset('../assets/cantora.png'),
-            Text('Show ao VIVO',style: GoogleFonts.indieFlower(fontSize:24),)],),
+            Text('Show ao VIVO',style: GoogleFonts.indieFlower(fontSize:20),)],),
           ),
           Container(
             margin: EdgeInsets.all(16),
             child: Column(children: [Image.asset('../assets/festival.png'),
-            Text('Festival de musica em São Roque',style: GoogleFonts.indieFlower(fontSize:12),
+            Text('Festival de musica em São Roque',style: GoogleFonts.indieFlower(fontSize:20),
             ),
             ],),
           ),

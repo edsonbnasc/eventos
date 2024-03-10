@@ -16,11 +16,11 @@ class _EventosState extends State<Eventos> {
       body: ListView(children: [
         ListTile(
           leading: Icon(Icons.event),
-          title: Text('Festa de Peão Boiadeiro'),
+          title:  Text('Festa de Peão Boiadeiro'),
           subtitle: Text('12/07/2023 - 14h'),
           trailing: Chip(label: Text('Confirmado')),
         ),
-        Divider(),
+         Divider(),
          ListTile(
           leading: Icon(Icons.event),
           title: Text('Festa de Peão Boiadeiro'),
@@ -41,8 +41,8 @@ class _EventosState extends State<Eventos> {
           subtitle: Text('15/08/2023 - 19h30min'),
           onTap: () {},
           ),
-    Divider(),
-    ListTile(
+          Divider(),
+          ListTile(
           leading: CircleAvatar(child: Image.asset('../assets/publico.png')),
           title: Text('Show de Musica'),  
           subtitle: Text('19/08/2023 - 19h30min'),
