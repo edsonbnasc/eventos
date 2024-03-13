@@ -16,11 +16,11 @@ class _EventosState extends State<Eventos> {
       body: ListView(children: [
         ListTile(
           leading: Icon(Icons.event),
-          title:  Text('Festa de Peão Boiadeiro'),
+          title: Text('Festa de Peão Boiadeiro'),
           subtitle: Text('12/07/2023 - 14h'),
           trailing: Chip(label: Text('Confirmado')),
         ),
-         Divider(),
+        Divider(),
          ListTile(
           leading: Icon(Icons.event),
           title: Text('Festa de Peão Boiadeiro'),
@@ -41,8 +41,8 @@ class _EventosState extends State<Eventos> {
           subtitle: Text('15/08/2023 - 19h30min'),
           onTap: () {},
           ),
-          Divider(),
-          ListTile(
+    Divider(),
+    ListTile(
           leading: CircleAvatar(child: Image.asset('../assets/publico.png')),
           title: Text('Show de Musica'),  
           subtitle: Text('19/08/2023 - 19h30min'),
@@ -50,23 +50,23 @@ class _EventosState extends State<Eventos> {
           ),
           Divider(),
           ListTile(
-          leading: CircleAvatar(child: Image.asset('../assets/publico.png')),
-          title: Text('Celebração do Aniversário de Gatinho'),  
-          subtitle: Text('15/08/2023 - 19h30min'),
+          leading: CircleAvatar(child: Image.asset('../assets/galera.png')),
+          title: Text('Show no estadio'),  
+          subtitle: Text('25/10/2023 - 19h30min'),
           onTap: () {},
           ),
     Divider(),
     ListTile(
-          leading: CircleAvatar(child: Image.asset('../assets/publico.png')),
-          title: Text('Celebração do Aniversário de Gatinho'),  
-          subtitle: Text('15/08/2023 - 19h30min'),
+          leading: CircleAvatar(child: Image.asset('../assets/show.png')),
+          title: Text('Aniversario da cidade'),  
+          subtitle: Text('25/11/2023 - 19h30min'),
           onTap: () {},
           ),
         Divider(),
         ListTile(
-          leading: CircleAvatar(child: Image.asset('../assets/publico.png')),
-          title: Text('Celebração do Aniversário de Gatinho'),  
-          subtitle: Text('15/08/2023 - 19h30min'),
+          leading: CircleAvatar(child: Image.asset('../assets/jogo.png')),
+          title: Text('Final Campeonato Brasileiro'),  
+          subtitle: Text('19/12/2024 - 21h30min'),
           onTap: () {},
           ),
 

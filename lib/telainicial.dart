@@ -30,8 +30,8 @@ class _TelaInicialState extends State<TelaInicial> {
           //menu lateral com botões de navegação
             ListTileTheme(child: const ThemeButton()),
             ListTile(leading: const Icon(Icons.home), title: const Text('Home'), onTap: ()=>Navigator.of(context).push(MaterialPageRoute(builder:(_)=> const TelaInicial()))),
-            ListTile(leading: const Icon(Icons.settings), title: const Text('Cadastre-se') ,onTap: ()=>Navigator.of(context).push(MaterialPageRoute(builder:(_)=> const TelaLogin()))),
             ListTile(leading: const Icon(Icons.settings), title: const Text('Eventos') ,onTap: ()=>Navigator.of(context).push(MaterialPageRoute(builder:(_)=> const Eventos()))),
+            ListTile(leading: const Icon(Icons.manage_accounts),title: const Text('Cadastr-se'),onTap: ()=>Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const TelaLogin()))),
             ListTile(leading: const Icon(Icons.search),title: const Text("Buscar"),onTap: () => {},),         
             ListTile(leading:const Icon(Icons.settings),title:const Text('Configurações') ,onTap:(){})],
         ),
@@ -47,7 +47,7 @@ class _TelaInicialState extends State<TelaInicial> {
 
       ),
       body: ListView(
-        children: [Text('Bem vindo aos eventos que estão chegando',textAlign: TextAlign.center, style: GoogleFonts.openSans(fontSize: 24)),
+        children: [Text('Eventos que estão chegando',textAlign: TextAlign.center, style: GoogleFonts.openSans(fontSize: 24)),
          Container(height: 60),
          Row(mainAxisAlignment: MainAxisAlignment.end,mainAxisSize: MainAxisSize.min ,
          children: [
@@ -70,6 +70,11 @@ class _TelaInicialState extends State<TelaInicial> {
             Text('Festival de musica em São Roque',style: GoogleFonts.indieFlower(fontSize:20),
             ),
             ],),
+          ),
+          Container(
+            margin: EdgeInsets.all(16),
+            child: Column(children: [Image.asset('../assets/jogo.png'),
+            Text('Final Campeonato',style: GoogleFonts.indieFlower(fontSize:20),)],),
           ),
          ],
        
